@@ -1,0 +1,39 @@
+.center{
+	/*width: 600;
+	margin: 0 auto;*/
+	width: 600px;
+  	margin: 0 auto;	
+}
+
+
+.outbox{
+	width: 560px;
+	border: 1px solid #1b1b1b;
+	margin-bottom: 75px;
+	margin-top: 25px;
+	display: inline-block;
+
+							
+}
+
+.brownbox{
+	height: 100px;
+	width: 160px;
+	margin: 10px;
+	background-color: #D3CEA6;
+	display: inline-block;
+}
+
+.bordbbox{
+	border: 10px solid black;
+}
+.last3box{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+p{
+	text-align: center;
+	font-family: lucida console, helvelica;
+}
