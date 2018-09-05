@@ -1,0 +1,22 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+div{
+	height: 350px;
+	width: 300px;
+	padding: 30px;
+	border-left: 20px solid #008C01;
+	border-right: 20px solid #7F8185;
+	border-top: 20px solid #5000EE;
+	border-bottom: 20px solid #FFFA0A;
+	margin: 15px;
+	background: #FC0101;
+	outline-style: solid;
+	outline-color: #920182;
+	outline-width: 20px;
+	color: white;
+	font-weight:bold;
+}
+
