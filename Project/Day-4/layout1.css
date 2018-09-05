@@ -1,0 +1,76 @@
+.redbox{	
+	width: 140px;
+	height: 100px;
+	background-color: #CA0201;
+	border: 5px solid #1b1b1b;
+	margin: 20px;
+
+
+}
+#b2{
+	border: 5px double #1b1b1b;
+	display: inline-block;
+
+}
+
+#b3{	
+	border: 5px dashed #1b1b1b;
+	display: inline-block;
+}
+
+#b4{	
+	border: 5px dotted #1b1b1b;
+	display: inline-block;
+
+}
+
+#b5{	
+	border: none;
+	display: inline-block;
+
+}
+
+/*
+_____________________________________
+           Content- box
+_____________________________________
+*/
+
+.OCbox{
+	background-color: #FA7349;
+  	display: inline-block;
+	
+}
+
+
+.Cbox {	
+	box-sizing: content-box;
+	width: 300px;
+  	padding: 10px 20px;
+	background-color: #00E12D;
+	border: 10px solid #CA0201;
+	margin: 40px;
+	color: blue;
+	text-align: center;
+}
+
+.OBbox{
+	background-color: #FA7349;
+  	display: inline-block;
+	
+}
+
+
+.BBox
+{	box-sizing: border-box;
+	width: 300px;
+	padding: 10px 10px;
+	background-color: #00E12D;
+	border: 10px solid #CA0201;
+	margin: 40px;
+	color: blue;
+	text-align: center;
+}
+
+
+
