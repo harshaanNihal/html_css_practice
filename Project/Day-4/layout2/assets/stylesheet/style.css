@@ -8,8 +8,8 @@
 	align: center;
 	width: 560px;
 	border: 1px solid #1b1b1b;
-	margin-bottom: 50px;
-	margin-top: 25px;
+	margin-bottom: 35px;
+	margin-top: 15px;
 	display: inline-block;
 
 							
@@ -41,6 +41,6 @@ hr{
 	width: 500px;
 	border: 1px dashed grey;
 	opacity: 0.5;
-	margin-bottom: 50px;
+	margin-bottom: 85px;
 	display: block;
 }
