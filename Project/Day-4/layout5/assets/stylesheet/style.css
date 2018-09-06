@@ -1,0 +1,62 @@
+.center{
+	width: 900px;
+  	margin: 0 auto;	
+}
+
+
+.coralbox{
+	margin: 20px 175px;
+	margin-bottom: 100px;
+	display: inline-block;
+	padding: 25px;
+	background-color: lightcoral;
+
+							
+}
+
+.innerbox{
+	height: 350px;
+	width: 350px;
+	margin: 25px ;
+	background-color: aqua;
+	display: inline-block;
+	border:25px solid #bada55;
+	outline: 25px solid black;
+}
+h1{
+	text-align: center;
+	font-size: 52px;
+}
+
+.dot{display: inline-block;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 5px;
+
+}
+.text{
+	display: inline-block;
+	color: black;
+	font-size: 35px;
+	font-weight: bold;
+	margin-right: 50px;
+	text-align: top;
+}
+
+.coral{
+	background-color: lightcoral;
+	margin-left: 50px
+}
+
+.black{
+	background-color: black;
+}
+
+.badass{
+	background-color: #bada55;
+}
+
+.aqua{
+	background-color: aqua;
+}

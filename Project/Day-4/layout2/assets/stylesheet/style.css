@@ -1,15 +1,14 @@
 .center{
-	/*width: 600;
-	margin: 0 auto;*/
 	width: 600px;
   	margin: 0 auto;	
 }
 
 
 .outbox{
+	align: center;
 	width: 560px;
 	border: 1px solid #1b1b1b;
-	margin-bottom: 75px;
+	margin-bottom: 50px;
 	margin-top: 25px;
 	display: inline-block;
 
@@ -36,4 +35,12 @@
 p{
 	text-align: center;
 	font-family: lucida console, helvelica;
+}
+hr{
+	align-self: center;
+	width: 500px;
+	border: 1px dashed grey;
+	opacity: 0.5;
+	margin-bottom: 50px;
+	display: block;
 }

@@ -13,9 +13,7 @@ div{
 	border-bottom: 20px solid #FFFA0A;
 	margin: 15px;
 	background: #FC0101;
-	outline-style: solid;
-	outline-color: #920182;
-	outline-width: 20px;
+	outline: 20px solid #920182;
 	color: white;
 	font-weight:bold;
 }
