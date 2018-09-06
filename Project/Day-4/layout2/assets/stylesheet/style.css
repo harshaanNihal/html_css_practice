@@ -3,19 +3,16 @@
   	margin: 0 auto;	
 }
 
-
 .outbox{
 	align: center;
 	width: 560px;
 	border: 1px solid #1b1b1b;
 	margin-bottom: 35px;
 	margin-top: 15px;
-	display: inline-block;
-
-							
+	display: inline-block;							
 }
 
-.brownbox{
+.box{
 	height: 100px;
 	width: 160px;
 	margin: 10px;
@@ -23,9 +20,10 @@
 	display: inline-block;
 }
 
-.bordbbox{
+.boxwthborder{
 	border: 10px solid black;
 }
+
 .last3box{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -36,6 +34,7 @@ p{
 	text-align: center;
 	font-family: lucida console, helvelica;
 }
+
 hr{
 	align-self: center;
 	width: 500px;
