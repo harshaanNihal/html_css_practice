@@ -1,0 +1,67 @@
+.float-left{
+	float: left;
+	margin: 0px 5px 5px 0px;
+}
+
+.float-right{
+	float: right;
+	margin:0px 0px 5px 5px;
+}
+
+.container{
+  background: pink;
+  border: 20px solid orange;
+  /*box-shadow: 0px 0px 0px 20px orange;*/
+  outline: 4px solid #FF4136;
+
+}
+.widebox{
+	width: 100%;
+	background-color: powderblue;
+	height: 100px;
+	margin: 5px;
+
+}
+.sqbox{
+	height: 100px;
+	width: 100px;
+	background-color: powderblue;
+	margin: 5px;
+}
+
+.clear{
+	clear: both;
+}
+
+.clearfix{
+
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after{
+	content: " ";
+    display: table;
+}
+    
+.clearfix:after{
+    clear: both
+}
+
+.full{
+	padding: 50px;
+}
+
+hr{
+	margin: 50px;
+	clear: both;
+	border-color: grey;
+}
+img{
+	/*margin:5px;*/
+}
+
+
+
+
+
+
