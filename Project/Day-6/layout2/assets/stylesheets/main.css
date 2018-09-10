@@ -48,7 +48,7 @@ table {
 }
 
 
-
+/*________________________________________________________CSS RESET END______________________________________________*/
 
 
 .AltCampus{
@@ -63,9 +63,11 @@ table {
 	z-index: 2;
 }
 
-.nave{
+.naveblack{
+	box-sizing: border-box;
 	position: relative;
 	top: 95px;
+	padding: 16px 0px;
 	/*margin-top: 95px;*/
 	background-color: black;
 	height: 50px;
@@ -73,10 +75,11 @@ table {
 	/*clear: both;*/
 }
 
-.navdiv{
+.navanc{
 	color: white;
-	margin:15px 0px 0px 50px;
-	display: inline-block;
+	text-decoration: none;
+	margin-left: 50px;
+
 }
 .foot{
 	height: 100px;
@@ -89,6 +92,7 @@ table {
 .base{
 	padding: 50px;
 }
+
 .parent{
 	height: 500px;
 	/*text-align: center;*/
@@ -97,13 +101,13 @@ table {
 
 .child{
 	position: absolute;
-	margin: auto;
+	/*margin: auto;
   	top: 0; left: 0; bottom: 0; right: 0;
-  	z-index: 1;
-  	/*left: 50%;
+  	z-index: 1;*/
+  	left: 50%;
   	top: 50%;
-  	+transform(translate(-50%,-50%))*/;
-}
+  	transform: translate(-50%,-50%);
+  }
 
 hr{
 	color: #ccc;
@@ -123,7 +127,7 @@ h2{
 	margin: 10px 0px;
 }
 
-h1,h2,p,div,small{
+h1,h2,p,a,small,div{
 	font-family: Arial, Helvetica, sans-serif;
 	color: grey;
 }

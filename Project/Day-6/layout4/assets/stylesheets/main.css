@@ -49,20 +49,21 @@ table {
 
 /*_______________________CSS RESET END_________________________*/
 
-.box .pink,.box .aqua{
+.pink, .aqua{
   	box-sizing: border-box;
-	display: inline-block;
 	width: 50%;
 }
 
 .pink{
-	/*display: inline-block;*/
+	position: fixed;
 	background-color: pink;
-  	float: left;
+  	
 }
 
 .aqua{
+	/*overflow: auto;*/
 	background-color: aqua;
+	float: right;
 }
 
 p{

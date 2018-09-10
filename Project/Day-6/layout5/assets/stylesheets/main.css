@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+/*____________________________________________________CSS RESET END___________________________________________________-*/
+
 .top{
 	height: 100px;
 	padding: 40px;
@@ -55,10 +57,11 @@ table {
 }
 
 .nave{
+	text-decoration: none;
 	display: inline-block;
-	margin-left: 10%;
-	margin-right: 10%;
-	font-size:25px;
+	margin-left: 9%;
+	margin-right: 9%;
+	font-size: 20px;
 	color: indigo;
 	
 }
@@ -71,8 +74,10 @@ table {
 
 .image{
 	display: inline-block;
-	margin-left: 10%;
+	margin-left: 9%;
 	margin-right: 5%;
+	height: 120px;
+	width: 120px;
 }
 
 p{
