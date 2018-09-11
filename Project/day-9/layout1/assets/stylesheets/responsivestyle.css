@@ -1,0 +1,48 @@
+.three{
+	width: 47%;
+}
+.section2{
+	margin:0;
+}
+.section3{
+	clear: both;
+	float: none;
+	width: auto;
+	padding-top: 20px;
+}
+
+.nave{
+	width: 25%;
+	border-bottom: 1px solid black;
+
+}
+/*----------Max Weidth 620px----------*/
+
+@media screen and (max-width: 500px){
+	.nave{
+		width:33%;
+		border-bottom: 1px solid black;
+	}
+}
+
+
+
+
+/*____________MAX WIDTH 500px___________*/
+
+@media screen and (max-width: 500px){
+	.threecol{
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+
+	.notv{
+		display: none;
+	}
+	.nave{
+		width: 50%;
+		font-size: 85%;
+	}
+
+}
