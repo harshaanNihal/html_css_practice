@@ -15,23 +15,34 @@
 	width: 25%;
 	border-bottom: 1px solid black;
 
+
+
+
 }
 /*----------Max Weidth 620px----------*/
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 690px){
 	.nave{
 		width:33%;
 		border-bottom: 1px solid black;
 	}
+	.section-primary{
+		width:100%;
+	}
+	.threebox{
+		width: 100%;
+		margin: 0 auto;
+	} 
+	.threebox div{
+		width: 80%;
+		margin:0 auto 15px auto;
+	}
 }
-
-
-
 
 /*____________MAX WIDTH 500px___________*/
 
 @media screen and (max-width: 500px){
-	.threecol{
+	.three{
 		width: auto;
 		float: none;
 		margin-right: 0;
@@ -44,5 +55,8 @@
 		width: 50%;
 		font-size: 85%;
 	}
+	.threebox{
+		width: 100%;
+	} 
 
 }

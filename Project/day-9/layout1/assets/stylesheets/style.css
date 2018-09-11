@@ -102,7 +102,7 @@ p {
 }
 .nave {
   float: left;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: 10px 15px;
   text-decoration: none;
   color: #000;
@@ -147,8 +147,8 @@ p {
 
 .threebox{
   width: 30%;
-  float: left;
-  margin-right: 10px;
+  float: right;
+  margin-right: 1px;
 }
 .threebox div{
   background-color: #efdb7f;
