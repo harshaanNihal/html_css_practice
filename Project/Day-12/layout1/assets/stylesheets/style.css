@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*___________________cssRESETend____________*/
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	width: 100%;
+}
+.wrapper{
+	max-width: 1600px;
+	width: 100%
+	height:auto;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+.top{
+	background:#5B6157;
+	height: 50px;
+	width: 100%;
+}
+
+.logo{
+	max-width: 50px;
+	width: 100%;
+	padding: 5px;
+	float: left;
+}
+.logo-text{
+	display: inline-block;
+	float: left;
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+/*BANNER*/
+
+.banner{	
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	justify-items: center;
+	align-content: center;
+	background-image:url(../media/b.jpg);
+	width: 100%;
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hello{
+	font-size: 10vw;
+	color: #fff;
+}
+
+.para{
+	font-size: 2vw;
+	color: #fff;
+	font-weight: 500px;
+	line-height: 1.5;
+	padding-top: 20px;
+}
+
+/*KITTEN GRID*/
+.kittygrid{
+	margin: 20px auto;
+	width: 85%;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap: 20px;
+	text-align: center; 
+}
+
+.kittygrid-item{
+	position: relative;
+}
+
+.image-title{
+	position: absolute;
+	z-index: 2;
+	background:rgba(255,255,255,.5);
+	padding:10px 0;
+	width: 100%;
+	bottom: 0px;
+}
+
+/*MEDIA QUERY*/
+
+@media all and (max-width: 640px){
+	.kittygrid{
+		width: 100%;
+		grid-template-columns: 1fr 1fr;
+	}
+	.hello{
+		font-size: 12vw;
+	}
+	.para{
+		width: 90%;
+		margin: 0 auto;
+		height: 160px;
+		font-size: 3vw;
+	}
+	.banner{
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 1fr
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 440px){
+	.kittygrid{
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+
+	.banner{
+		padding-top: 50px;
+		height: 200px;
+		justify-items: center;
+		align-self: center;
+	}
+}

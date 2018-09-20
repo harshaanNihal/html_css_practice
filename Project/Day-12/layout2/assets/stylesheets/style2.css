@@ -1,0 +1,162 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*___________________cssRESETend____________*/
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+.wrapper{
+	max-width: 1200px;
+	max-height: 1000px;
+	width: 100%
+	height:auto;
+	margin: 0 auto;
+}
+
+.image{
+	width: 100%;
+	height: 100%;
+	display: grid;
+}
+
+/*HEADER*/
+.logo{
+	width: 30px;
+	height: 30px;
+}
+
+.logo-banner{
+	font-weight: 800;
+	font-size: 30px;
+	padding: 10px 20px;
+	color: #EACF62;
+	font-family: cursive;
+}
+
+/*COLLAGE*/
+.collage{
+	width: 100%;
+	/*height: 900px;*/
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-rows: 1fr 1fr 1fr;
+	overflow: hidden;
+}
+
+.section1{
+	display: grid;
+	grid-template-columns: 2fr 3fr 1fr;
+	height: 350px;
+}
+
+.section1-sub{
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+.section2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 2fr;
+	height: 350px;
+}
+
+.section3{
+	display: grid;
+	grid-template-columns: 2fr 1fr 3fr;
+	height: 350px;
+}
+
+.box1,
+.box8{
+	background: #272620;
+	color: white;
+	padding: 20px 30px;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.box1 h1,
+.box8 h1{
+	font-size: 25px;
+	margin: 20px 0;
+}
+
+.yelo{
+	color :orange;
+	margin: 10px 0;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 580px){
+
+	.section1{
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: 1fr 2fr 3fr; 
+		height: 100%;
+	}
+	.section1-sub{
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr; 
+	}
+	.section2{
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: 2fr 2fr 2fr 1fr;
+		height: 100%;
+	}
+	.section3{
+		display: grid;
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr 1fr; 
+		height: 100%;
+	}
+}

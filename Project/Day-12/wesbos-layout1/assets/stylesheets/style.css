@@ -3,7 +3,7 @@ html {
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
     Sans-Serif;
   font-weight: normal;
-  color: #272727;
+  color: #272727 !important;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
@@ -119,14 +119,14 @@ h6 {
 
 }
 
-.setting{
+.settings{
   padding: 5px;
   background-color: black;
   border-top: 1px solid grey;
 }
 iframe{
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 
