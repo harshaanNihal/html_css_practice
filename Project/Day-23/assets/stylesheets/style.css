@@ -1,0 +1,421 @@
+:root{
+	font-size: 16px;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*___________________cssRESETend____________*/
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+body{
+	font-family: helvetica;
+}
+main{
+	position: relative;
+	top: 60px;
+}
+h1{
+	font-size: 2.6rem;
+	font-weight: 700;
+	margin: 15px;
+}
+h2{
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin: 20px 0;
+}
+h3{
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin: 20px 0;
+}
+h5{
+	font-size: 1.2rem;
+}
+h6{
+	font-size: 1rem;
+}
+
+
+.main_wrapper{
+	max-width: 1800px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+}
+.container{
+	max-width: 1200px;
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+}
+
+.padding{
+	padding: 40px 0;
+}
+.center{
+	text-align: center;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+/* 
+==================================
+			HEADER
+==================================
+*/
+
+.header{
+	position: fixed;
+	width: 100%;
+	padding: 10px 0;
+	background:	#2B4554;
+	z-index: 2;
+}
+.header a{
+	color: white;
+	text-decoration: none;
+	padding: 10px 10px;
+	font-weight: 600;
+}
+span h3{
+	padding: 0px 10px;
+}
+.header a:hover{
+	font-size: 110%;
+	color: #00A87D;
+	text-shadow: 1px 1px 2px  rgba(255, 255, 255, 1); 
+}
+
+li{
+	margin-top:10px;
+	display: inline-block;
+}
+
+
+/*
+==================================
+			HERO SECTION
+==================================
+*/
+.hero__sec{ 
+	background: linear-gradient(#2B4554, #00A87D); 
+}
+.hero__sec h1,.hero__sec h5{
+		color:#cdffe6;
+
+}
+.hero__sec__logo{
+
+}
+
+.hero__sec__logo__img{
+	margin: 10px 0;
+	width: 200px;
+	height: auto;
+	border-radius: 50%;
+}
+
+/*
+==================================
+			PORTFOLIO SECTION
+==================================
+*/
+
+.portf__sec h2{
+	color: #2D4154;
+}
+.portf__sec__imggrid{
+	width: 90%;
+
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;
+}
+.portf__sec__imggrid__image{
+	width: 100%;
+
+}
+
+/*
+==================================
+			ABOUT SECTION
+==================================
+*/
+
+.about__sec{
+	background: linear-gradient(#2B4554, #00A87D); 
+	color:#cdffe6;
+}
+
+.about__sec__paragrid{
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+}
+.about__sec__btn{
+	background-color: white;
+	height: 45px;
+	width: 100px;
+	border: 1.5px solid black;
+	border-radius: 4px;
+	margin:40px;
+	color: black;	
+	font-weight: 600;
+}
+.about__sec__btn:hover{
+	background-color: #2B4554;
+	width: 102px;
+	border: 1.7px solid #fff;
+	color: #fff;
+	box-shadow: 1px 1px 15px 3px rgba(246, 255, 108, .6);	
+}
+
+/*
+==================================
+			FORM SECTION
+==================================
+*/
+.form__sec{
+	color: #5e7d9f;
+}
+.form__sec h2{
+	color: #2d4154;
+	text-align: center;
+}
+.inputbox{
+	display: block;
+	width: 80%;
+	background-color: #f2f2f2;
+	border:hidden;
+	font-size: .8rem;
+	color: #5e7d9f;
+	border-bottom: 1px solid #5e7d9f;
+	margin: 15px auto;
+	padding: 12px 3px;
+}
+.inputbox::placeholder {
+  color: #5e7d9f;
+  opacity: 1;
+}
+.form__sec__btn{
+	margin-top: 40px;
+	width: 100px;
+	height: 45px;
+	color: white;
+	background: #007362;
+	font-weight: 600;
+	margin-left:10%;
+	border: none;
+	border-radius: 4px; 
+}
+.form__sec__btn:hover{
+	color: white;
+	background: #00b69b;
+	box-shadow: 1px 1px 15px 5px rgba(246, 255, 108, .8);	 
+}
+
+/*
+==================================
+			MAP SECTION
+==================================
+*/
+
+.map__sec{
+	background:#bcc7d3;
+}
+.map__sec iframe{
+	width: 100%;
+}
+
+/*
+==================================
+			TABLE SECTION
+==================================
+*/
+
+table{
+	box-sizing: content-box;
+	border-collapse: collapse;
+
+}
+th, td{
+	text-align: left;
+	padding: 7px 10px;
+}
+th{
+	background: #242b3e;
+	color: #005b79;
+	font-weight: 600;
+}
+tr{
+	padding: 20px;
+	background: #363f54;
+}
+tr:nth-child(even){
+	background: #30374a; 
+}
+tr td:first-child{
+	color:#f94b71;
+	font-weight: 600;
+}
+
+/*
+==================================
+			BOTTOM SECTION
+==================================
+*/
+
+
+.bottom__sec{
+	background: #2d4154; 
+	color: #d9f9e2;
+}
+.bottom__sec__grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+cite{
+	color: #0dc2a0;
+}
+.circle{
+	position: relative;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 50%;
+	border:1px solid #d9f9e2;	 
+
+}
+.circle:hover{
+	box-shadow: 1px 1px 15px 3px inset rgba(255, 255, 255, .3);	 
+}
+.icon{
+	text-decoration: none;
+	color: #d9f9e2;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 20px;
+
+}
+
+/*
+==================================
+			FOTTER SECTION
+==================================
+*/
+footer{
+	position: relative;
+	background-color: #192a34;
+	color: #d9f9e2;
+	top: 60px;
+}
+
+
+/*
+==================================
+			RESPONSIVE MEDIA QUERY
+==================================
+*/
+
+@media all and (max-width: 768px){
+.padding{
+	padding: 30px 0;
+}
+main{
+	top:0;
+}
+.container{
+	width: 90%;
+}
+.left ,.right{
+	float: none;
+	display: block;
+}
+.header{
+	position: relative;
+	text-align: center;
+}
+li, span{
+	display: block;
+}
+
+.portf__sec__imggrid{
+	width: 60%;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.about__sec__paragrid{
+	width: 55%;
+	grid-template-columns: 1fr;
+}
+
+.bottom__sec__grid{
+	width: 40%;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+}
+.footer{
+	top:0;
+}
+}
