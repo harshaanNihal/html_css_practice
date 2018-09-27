@@ -1,0 +1,200 @@
+:root{
+	font-size: 16px;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*___________________cssRESETend____________*/
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+body{
+	font-family: helvetica;
+	background-color: #f2f2f2;
+}
+h1{
+	font-size: 2.6rem;
+}
+h2{
+	font-size: 2.4rem;
+}
+h3{
+	font-size: 2rem;
+}
+h4{
+	font-size: 1.6rem;
+}
+h5{
+	font-size: 1.2rem;
+}
+h6{
+	font-size: 1rem;
+}
+p{
+	text-align: center;
+}
+body{
+
+}
+
+.main_wrapper{
+	max-width: 1800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.container{
+	max-width: 1200px;
+	width: 80%;
+	margin: 20px auto;
+	height: auto;
+}
+
+
+/* 
+==================================
+			HEADER
+==================================
+*/
+
+.header{
+	display: flex;
+	justify-content: space-between;
+		margin-bottom: 20px;
+}
+
+ h1,form{
+	display: inline-block;
+}
+.form{
+	display: flex;
+	/*font-variant-east-asian: */
+	/*flex:1 1 50%;*/
+}
+.form span{
+	padding-left:20px;
+	text-align: left;
+}
+.form span p{
+	text-align: left;
+	color: #686767;
+	font-size: .8rem;
+}
+
+
+
+
+/* 
+==================================
+			Main /Hero
+==================================
+*/
+.hero{
+	display: flex;
+	/*flex-flow: column; */
+	flex-wrap: wrap;
+	min-height: 100vh;
+}
+.item{
+	width: 20%;
+	border:1px solid #D1B892;
+	background-color: #fff;
+	display: flex;
+	flex-flow: column; 
+}
+
+.images{
+	width: 100%;
+	height: 70%;
+	margin: 10px 0;
+}
+.item p:last-child{
+	color: #797979;
+}
+/*
+==================================
+			RESPONSIVE MEDIA QUERY
+==================================
+*/
+
+@media all and (max-width: 768px){
+	:root{font-size: 13px;}
+	.container{
+		width: 90%;
+	}
+	.hero{
+		height: 100vh;
+		flex-flow: reverse;
+	}
+	.item{
+		flex: 1 1 25%;
+		order: 99;
+	}
+	.item-1, .item-2{
+		flex: 1 1 50%;
+		order: 1;
+	}
+
+}
+
+@media all and (max-width: 440px){
+ .header{
+ 	flex-flow: column;
+	flex:1 1 100%;
+	text-align: center; 
+}
+	.item{
+		flex-basis: 50%; 
+	}
+.form{
+	justify-content: space-between;
+}
+}
+@media all and (max-width: 250px){
+	.item{
+		flex-basis: 100%; 
+	}
+	.form{
+		flex-flow: column;
+	}
+}
