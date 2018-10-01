@@ -1,0 +1,54 @@
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  background-color: #f6f6f6;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.015) 50%, rgba(0, 0, 0, 0.015) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.05) 10%, transparent 15%);
+  background-size: 1.5em 1.5em, .5em .5em;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 1.5em;
+  height: 100vh; }
+
+.container {
+  width: 45em;
+  margin: 0 auto;
+  padding: 1.5em; }
+
+.image-box {
+  float: left;
+  height: 6em;
+  margin: 1.5em;
+  width: 12em;
+  -webkit-transform: perspective(500);
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: .5s; }
+  .image-box img {
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 100%;
+    -webkit-transition: .5s; }
+  .image-box:hover {
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em); }
+    .image-box:hover img {
+      box-shadow: none; }
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  padding: 1.5em;
+  -webkit-transform: rotateX(-90deg);
+  -webkit-transform-origin: 100% 0;
+  -webkit-transition: .5s; }
+  .image-box:hover figcaption {
+    box-shadow: 0 20px 15px -10px rgba(0, 0, 0, 0.25); }
+
+h3 {
+  font-weight: bold; }
+
+div {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
