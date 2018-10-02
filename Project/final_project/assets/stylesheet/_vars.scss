@@ -1,0 +1,11 @@
+$font-family: 'Lato', sans-serif;
+$primary-color: #42b574;
+$secondary-color: #84c450;
+$primary-text-color: #fff;
+$secondary-text-color: #434345;
+
+%flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
