@@ -38,101 +38,52 @@
 .fa-arrow-right {
 	right: 30px !important;
 }
-.main-btn {
-	color: $primary-text-color;
-	font-weight: 700;
+.builder {
 	border: none;
-	background: $primary-color;
+	background: green;
 	padding: 20px 40px;
 	position: relative;
-	transition: background 300ms linear 300ms;
-	white-space: nowrap;
-	text-transform: uppercase;
-	letter-spacing: 0.06em;
-	border-width: 2px;
-	border-radius: 5px;
-	backface-visibility: hidden;
-	margin-top: 30px;
-	margin-left: 30px;
+	transition: background linear 150ms;
 }
-.btn{
-	@extend .main-btn;
-	background-color: transparent;
-	border: 2px solid $primary-text-color;
-	transition: background 300ms linear 300ms, color 300ms linear 300ms ;
-}
-
-.mdot-left, .mdot-right {
-	width:30px;
-	height: 30px;
-	background: #79ccf2;
+.bubble1, .bubble2 {
+	width:20px;
+	height: 20px;
+	background: yellow;
 	border-radius: 50%;
 	position: absolute;
 	display: none;
 
 }
-.bdot-left, .bdot-right{
-	@extend .mdot-left;
-	background : $primary-text-color;
-}
 
-.main-btn:hover {
-	background: #79ccf2;
-	.mdot-left {
+.builder:hover {
+	.bubble1 {
 		display: inline-block;
-		animation: slide 350ms linear forwards;
+		animation: slide 200ms linear;
 	}
-	.mdot-right {
+	.bubble2 {
 		display: inline-block;
-		animation: slide2 350ms linear forwards;
+		animation: slide2 200ms linear;
 	}
-
-} 
-.btn:hover {
-	background: $primary-text-color;
-	color: $secondary-color;
-	.bdot-left {
-		display: inline-block;
-		animation: slide 350ms linear forwards;
-	}
-	.bdot-right {
-		display: inline-block;
-		animation: slide2 350ms linear forwards;
-	}
-
+	background: yellow;
 } 
 @keyframes slide {
 	0% {
 		left: 0;
 		top:30%;
-		opacity: 1;
-	}
-	99% {
-		left: 50%;
-		top:30%;
-		opacity: 1;
 	}
 	100% {
 		left: 50%;
 		top:30%;
-		opacity: 0;
 	}
 }
 @keyframes slide2 {
 	0% {
 		right: 0%;
 		top:30%;
-		opacity: 1;
-	}
-	99% {
-		right: 50%;
-		top:30%;
-		opacity: 1;
 	}
 	100% {
 		right: 50%;
 		top:30%;
-		opacity: 0;
 	}
 }
 // ====================
@@ -143,13 +94,6 @@
 }
 .nav, .menu {
 	@extend %flex;
-}
-.sub-menu2-1,
-.sub-menu2-2,
-.sub-menu2-3,
-.sub-menu2-4,
-.sub-menu2-5 {
-	display: none;
 }
 .menu__item {
 	margin-left: 30px;
@@ -164,13 +108,6 @@
 	}
 	&:hover .sub-menu {
 		display: inline-block;
-	}
-}
-.primary-drop:hover {
-	.place{
-		display: inline-block;
-		position: absolute;
-		left:100%;	
 	}
 }
 .menu__link {
@@ -235,12 +172,7 @@
 	}
 }
 
-.sub-menu,
-.sub-menu2-1,
-.sub-menu2-2,
-.sub-menu2-3,
-.sub-menu2-4,
-.sub-menu2-5  {
+.sub-menu {
 	position: absolute;
 	width: 200px;
 	z-index: 1;
@@ -264,11 +196,6 @@
 	padding-top: 80px;
 	position: relative;
 	height: 600px;
-}
-.flexible {
-	background: linear-gradient(0deg, #42b574 0%, #84c450 100%);	
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 .theme__img {
 	position: absolute;
@@ -356,14 +283,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.features__heading {
-	font-size: 1.5rem;
-	margin: 1rem 0;
-}
-.features__text {
-	font-size: 1rem;
-	line-height: 1.5;
-}
+
 .ad {
 	padding: 60px 0;
 	background: linear-gradient(to right, cyan, $primary-color, $secondary-color);
@@ -397,125 +317,9 @@
 	grid-gap: 30px;
 	color: $primary-text-color;
 }
-.data__item{
-	.data__heading {
-		font-size: 3rem;
-		margin-bottom: 2rem;
-		background: linear-gradient(90deg, #8668ad 0%, #55bbeb 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	.data__hr {
-		width:50px;
-	}
-// ====================
-// Available
-// ====================
-.available {
-	.available__figure {
-		text-align: center;
-		margin: 3rem 0;
-		.event-figure {
-			width:90%;
-			height:auto;
-		}
-		h3 {
-			color: rgb(44, 39, 39);
-			font-size: 2.5rem;
-		}
-	}
-}
-.available__grid{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
-}
-.available__grid__child{
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: auto 1fr;
-	.far{
-		font-size: 3rem;
-	}
-}
-.available__footer{
-
-}
-.available__tri {
-	height: 0;
-	width: 0;
-	border: 30px solid transparent;
-	border-bottom: 30px solid black;
-	position: absolute;
-	top:-60px;
-	left: calc(50% - 30px);
-}
 
 
 
-// ====================
-// Team member
-// ====================
-.team__header {
-	h3 {
-		font-size: 3rem;
-	}
-	p {
-		margin: 1rem 0;
-		font-size: 1.2rem;
-	}
-}
-.team__hr {
-	display: inline-block;
-	width: 5%;
-	height: 2px;
-	background: linear-gradient(0deg, #42b574 0%, #84c450 100%);	
-}
 
-.team__member {
-	margin-top: 2rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap:30px;
-	.member {
-		.member__hr {
-			width: 20%;
-		}
-		.member__list {
-			height: 140px;
-			width: 140px;
-			border-radius: 50%;
-		}
-		h3 {
-			font-size: 1.5rem;
-			margin: .5rem 0;
-		}
-		h5 {
-			color: skyblue;
-			font-size: 1rem;
-			margin: .5rem 0;
-		}		
-	}
-}
-.media__content {
-	max-width: 80%;
-	margin: 1.5rem auto;
-	display: flex;
-	justify-content: space-around;
-}
-.media__icon {
-	position: relative;
-	display: inline-block;
-	color: white;
-	background: rgb(43, 41, 41);
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	.fab {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
+
 
