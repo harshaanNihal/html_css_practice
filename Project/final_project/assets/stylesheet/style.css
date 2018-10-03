@@ -936,7 +936,10 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 30px; }
   .team__member .member .member__hr {
-    width: 20%; }
+    width: 20%;
+    height: 2px;
+    color: #42b574;
+    background: linear-gradient(0deg, #42b574 0%, #84c450 100%); }
   .team__member .member .member__list {
     height: 140px;
     width: 140px;
@@ -947,7 +950,16 @@ a {
   .team__member .member h5 {
     color: skyblue;
     font-size: 1rem;
-    margin: .5rem 0; }
+    margin: .5rem 0;
+    font-weight: bold; }
+  .team__member .member .fb, .team__member .member .tw, .team__member .member .gp {
+    transition: background .3s linear; }
+  .team__member .member .fb:hover {
+    background: #3B5998; }
+  .team__member .member .tw:hover {
+    background: #00aced; }
+  .team__member .member .gp:hover {
+    background: #CC3333; }
 
 .media__content {
   max-width: 80%;
@@ -968,5 +980,15 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.clients {
+  background: url(../media/background-03-1920x900.jpg);
+  background-clip: cover;
+  height: 100vh;
+  padding-top: 1rem;
+  color: white; }
+  .clients h2 {
+    text-align: center;
+    margin-top: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

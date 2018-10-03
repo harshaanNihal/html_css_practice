@@ -589,6 +589,9 @@
 	.member {
 		.member__hr {
 			width: 20%;
+			height: 2px;
+			color: $primary-color;
+			background: linear-gradient(0deg, #42b574 0%, #84c450 100%);
 		}
 		.member__list {
 			height: 140px;
@@ -603,7 +606,20 @@
 			color: skyblue;
 			font-size: 1rem;
 			margin: .5rem 0;
-		}		
+			font-weight: bold;
+		}
+		.fb ,.tw ,.gp{
+			transition: background .3s linear;
+		}
+		.fb:hover{
+			background: #3B5998;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+		}
+		.tw:hover{
+			background: #00aced;
+		}	
+		.gp:hover{
+			background: #CC3333; 
+		}	
 	}
 }
 .media__content {
@@ -631,6 +647,14 @@
 //Clients
 // ====================
 
-@media all and (max-width: 720px){
-
+.clients{
+	background: url(../media/background-03-1920x900.jpg);
+	background-clip: cover;
+	height:100vh;
+	padding-top:1rem; 
+	color: white;
+	h2{
+		text-align: center;
+		margin-top: 1rem;
+	}
 }
