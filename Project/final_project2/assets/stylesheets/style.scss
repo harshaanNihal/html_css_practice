@@ -1,0 +1,107 @@
+@import "base";
+@import "var";
+
+/*
+==========================
+------HERO SECTION------
+==========================
+*/
+.hero{
+    height: 100vh;
+    &.--grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  
+    
+}
+.--btncrv{
+
+}
+
+/*
+==========================
+------ABOUT SECTION------
+==========================
+*/
+.about{
+    height: 80vh;
+    &.--grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+    }
+
+}
+.about__top{
+    &.--grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .top__right{
+        &.--grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+.about__bottom{
+
+    &.--grid{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+/*
+================================
+------EXPERIENCE SECTION-------
+=================================
+*/
+.experiences{
+    height: 45vh;
+    &.--grid{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/*
+================================
+------testimonial SECTION-------
+=================================
+*/
+.testimonial{
+    height: 55vh;
+    &.--grid{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/*
+================================
+------CONTACT SECTION-------
+=================================
+*/
+.contact{
+    height: 80vh;
+    &.--grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
+/*
+===============================
+------MAP SECTION-----------
+===============================
+*/
+
+
+/*
+===============================
+------FOOTER SECTION-----------
+===============================
+*/
+
