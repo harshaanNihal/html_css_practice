@@ -565,6 +565,9 @@
 // ====================
 // Team member
 // ====================
+.team{
+	padding: 6rem 0;
+}
 .team__header {
 	h3 {
 		font-size: 3rem;
@@ -648,6 +651,7 @@
 // ====================
 
 .clients{
+	text-align: center;
 	background: url(../media/background-03-1920x900.jpg);
 	background-clip: cover;
 	height:100vh;
@@ -657,4 +661,210 @@
 		text-align: center;
 		margin-top: 1rem;
 	}
+	.client__hr {
+		display: inline-block;
+		width:10%;
+		height: 2px;
+		background: black;
+	}
+	p {
+		width: 80%;
+		margin:2rem auto;
+		font-size: 1rem;
+	}	h3 {
+		margin: 2rem 0;
+		color: skyblue;
+		font-size: 1rem;
+	}
+	h5{ font-size: 2rem;
+		font-family: "Yesteryear", cursive;
+	}
+	h6{
+		letter-spacing: .15rem;
+		color: #55bbeb;
+
+	}
+}
+.client_grid{
+	widows: 70%;
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+// .client__list{
+// 	width: 94px;
+// 	height: 94px;
+// 	display: inline-block;
+// 	background: $primary-text-color;
+// 	border: 2px solid white;
+// 	border-radius: 50%;
+// }
+.client_img {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+// ====================
+// Partner
+// ====================
+.partner{
+	color: white;
+	background: rgb(32, 32, 32);
+	text-align: center;
+	padding: 60px 0;
+	.par__hr{
+		display: inline-block;
+		width: 50px;
+		height: 2px;
+		margin: 0 auto;
+		background: linear-gradient(0deg, #42b574 0%, #84c450 100%);	
+	}
+	p{
+		width: 70%;
+		margin: 3rem auto;
+
+	}
+
+
+	.partner_grid{
+		width: 80%;
+		margin: 3rem auto 1.5rem auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+	}
+	.partner__logo{
+		opacity: .6;
+		transition: opacity 100ms linear;
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+}
+
+
+// ====================
+// footer
+// ====================
+.footer {
+	color:$primary-text-color;
+	display: grid;
+	padding: 3rem 2rem;
+	grid-template-columns: 2fr 2fr 1fr 2fr;
+	grid-gap: 30px;
+	background: #191919;
+}
+.footer__header {
+	margin-left: 3rem;
+	h2 {
+		font-size: 2rem;
+		color:white;
+		margin-bottom: 1rem;
+	}
+	p {
+		color: rgb(133, 126, 126);
+	}
+	.media__content {
+		max-width: 80%;
+		margin-left: -1rem;
+	}
+	.fb ,.tw ,.gp, .ln{
+		transition: background .3s linear;
+	}
+	.fb:hover{
+		background: #3B5998;																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+	}
+	.tw:hover{
+		background: #00aced;
+	}	
+	.gp:hover{
+		background: #CC3333; 
+	}	
+	.ln:hover{
+		background: #0079a5;
+
+	}
+}
+.newsletter {
+	h3 {
+		font-size: 1.5rem;
+		color: white;
+		margin-bottom: 2rem;
+	}
+	p {
+		font-size: 1rem;
+		color: white;
+		line-height: 1.5;
+	}
+	.subscribe {
+		margin: 1rem 0;
+		.media__icon {
+			border-radius: 0;
+			height: auto	;
+			width: 30px;
+			position: relative;
+			.fas{
+				position: absolute;
+				font-size: 2rem;
+				margin-top: -4px;
+				color: white;
+				left:50%;
+				top:50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		input {
+			height: 2.2rem;
+		}
+		.subscribe__btn {
+			border: none;
+			color: white;
+			background: rgb(76, 179, 76);
+			padding: .6rem 1rem;
+		}
+	
+	}
+	
+}
+.useful__links {
+	h3 {
+		font-size: 1.5rem;
+		color: white;
+		margin-bottom: 2rem;
+	}
+	li {
+		color: green;
+		font-size: 1rem;
+		list-style-type: disc;
+		padding-bottom: 1.5rem;
+		a {
+			color:white;
+			font-size: 1rem;
+		}
+	}
+}
+.latest__news {
+		h3 {
+			font-size: 1.5rem;
+			color: white;
+			margin-bottom: 2rem;
+		}
+		h5{
+			font-size: 1rem;
+			margin-bottom: 1.5rem;
+		}
+}
+
+
+
+// ====================
+// footer- bottom
+// ====================
+.footer__bottom {
+	background: #191919;
+	padding: 2rem 1rem;
+	font-size: 1rem;
+	color: rgb(68, 66, 66);
 }

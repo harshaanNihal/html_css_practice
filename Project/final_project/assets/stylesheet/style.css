@@ -918,6 +918,9 @@ a {
   .child_themes h4 {
     margin: 1.5rem 0; }
 
+.team {
+  padding: 6rem 0; }
+
 .team__header h3 {
   font-size: 3rem; }
 .team__header p {
@@ -982,6 +985,7 @@ a {
     transform: translate(-50%, -50%); }
 
 .clients {
+  text-align: center;
   background: url(../media/background-03-1920x900.jpg);
   background-clip: cover;
   height: 100vh;
@@ -990,5 +994,148 @@ a {
   .clients h2 {
     text-align: center;
     margin-top: 1rem; }
+  .clients .client__hr {
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    background: black; }
+  .clients p {
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1rem; }
+  .clients h3 {
+    margin: 2rem 0;
+    color: skyblue;
+    font-size: 1rem; }
+  .clients h5 {
+    font-size: 2rem;
+    font-family: "Yesteryear", cursive; }
+  .clients h6 {
+    letter-spacing: .15rem;
+    color: #55bbeb; }
+
+.client_grid {
+  widows: 70%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+
+.client_img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; }
+
+.partner {
+  color: white;
+  background: #202020;
+  text-align: center;
+  padding: 60px 0; }
+  .partner .par__hr {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #42b574 0%, #84c450 100%); }
+  .partner p {
+    width: 70%;
+    margin: 3rem auto; }
+  .partner .partner_grid {
+    width: 80%;
+    margin: 3rem auto 1.5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .partner .partner__logo {
+    opacity: .6;
+    transition: opacity 100ms linear; }
+    .partner .partner__logo:hover {
+      opacity: 1; }
+
+.footer {
+  color: #fff;
+  display: grid;
+  padding: 3rem 2rem;
+  grid-template-columns: 2fr 2fr 1fr 2fr;
+  grid-gap: 30px;
+  background: #191919; }
+
+.footer__header {
+  margin-left: 3rem; }
+  .footer__header h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem; }
+  .footer__header p {
+    color: #857e7e; }
+  .footer__header .media__content {
+    max-width: 80%;
+    margin-left: -1rem; }
+  .footer__header .fb, .footer__header .tw, .footer__header .gp, .footer__header .ln {
+    transition: background .3s linear; }
+  .footer__header .fb:hover {
+    background: #3B5998; }
+  .footer__header .tw:hover {
+    background: #00aced; }
+  .footer__header .gp:hover {
+    background: #CC3333; }
+  .footer__header .ln:hover {
+    background: #0079a5; }
+
+.newsletter h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem; }
+.newsletter p {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.5; }
+.newsletter .subscribe {
+  margin: 1rem 0; }
+  .newsletter .subscribe .media__icon {
+    border-radius: 0;
+    height: auto;
+    width: 30px;
+    position: relative; }
+    .newsletter .subscribe .media__icon .fas {
+      position: absolute;
+      font-size: 2rem;
+      margin-top: -4px;
+      color: white;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+  .newsletter .subscribe input {
+    height: 2.2rem; }
+  .newsletter .subscribe .subscribe__btn {
+    border: none;
+    color: white;
+    background: #4cb34c;
+    padding: .6rem 1rem; }
+
+.useful__links h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem; }
+.useful__links li {
+  color: green;
+  font-size: 1rem;
+  list-style-type: disc;
+  padding-bottom: 1.5rem; }
+  .useful__links li a {
+    color: white;
+    font-size: 1rem; }
+
+.latest__news h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem; }
+.latest__news h5 {
+  font-size: 1rem;
+  margin-bottom: 1.5rem; }
+
+.footer__bottom {
+  background: #191919;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  color: #444242; }
 
 /*# sourceMappingURL=style.css.map */

@@ -622,3 +622,136 @@
 // ====================
 // client saying
 // ====================
+.clients {
+	// width: 80%;
+	margin: 0 auto;
+	padding: 3rem 0;
+	background: url(../media/background-03-1920x900.jpg);
+	h2 {
+		font-size: 2rem;
+	}
+	.client__hr {
+		display: inline-block;
+		width:10%;
+		height: 2px;
+		background: black;
+	}
+	p {
+		width: 80%;
+		margin:0 auto;
+		font-size: 1rem;
+	}
+	h3 {
+		margin: 2rem 0;
+		color: skyblue;
+		font-size: 1rem;
+	}
+}
+.client__image{
+	margin: 2rem 0;
+}
+.client__img__list {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+
+
+// ====================
+// footer
+// ====================
+.footer {
+	display: grid;
+	padding-top: 2rem;
+	grid-template-columns: 2fr 3fr 1fr 2fr;
+	grid-gap: 30px;
+	background: rgb(32, 32, 32);
+}
+.footer__header {
+	margin-left: 1rem;
+	h2 {
+		font-size: 2rem;
+		color:white;
+		margin-bottom: 1rem;
+	}
+	p {
+		color: rgb(133, 126, 126);
+	}
+	.media__content {
+		justify-content: space-between;
+		max-width: 100%;
+	}
+}
+.newsletter {
+	h3 {
+		font-size: 1.5rem;
+		color: white;
+		margin-bottom: 2rem;
+	}
+	p {
+		font-size: 1rem;
+		color: white;
+		line-height: 1.5;
+	}
+	.subscribe {
+		margin: 1rem 0;
+		.media__icon {
+			border-radius: 0;
+			height: auto	;
+			width: 30px;
+			position: relative;
+			.fas{
+				position: absolute;
+				font-size: 2rem;
+				margin-top: -4px;
+				color: white;
+				left:50%;
+				top:50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		input {
+			height: 2.1rem;
+		}
+		.subscribe__btn {
+			border: none;
+			color: white;
+			background: rgb(76, 179, 76);
+			padding: .6rem 1rem;
+		}
+	
+	}
+	
+}
+.useful__links {
+	li {
+		color: green;
+		font-size: 1rem;
+		list-style-type: disc;
+		padding-bottom: 1.5rem;
+		a {
+			color:white;
+			font-size: 1rem;
+		}
+	}
+}
+.latest__news {
+	h3 {
+		font-size: 1rem;
+		color: white;
+		margin-bottom: 2rem;
+	}
+}
+
+
+
+// ====================
+// footer- bottom
+// ====================
+.footer__bottom {
+	background: rgb(32, 32, 32);
+	padding: 2rem 1rem;
+	font-size: 1rem;
+	color: rgb(68, 66, 66);
+}
