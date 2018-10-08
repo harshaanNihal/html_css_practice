@@ -63,10 +63,6 @@ a {
 p{
   color:$font-blurcolor;
 }
-
-
-
-
 img{
   width: 100%;
   height: 100%;
@@ -74,9 +70,14 @@ img{
 .right{
   float: right;
 }
-
 .center {
-    text-align: center;
+  text-align: center;
+}
+.wrapper{
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 $base-font-size: 3rem;
