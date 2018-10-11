@@ -54,22 +54,27 @@
 }
 .hero__content{
   color: white;
+  font-family: polya;
+  text-align: center;
   position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translate(-50%,-50%)
+  left: 5%;
+  top: 55%;
+  transform: translate(-2%,-50%)
 }
 .hero__heading{
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 2rem auto;
 }
 .heading__shade{
+  font-family: polya;
   color: $pink;
+  // font-weight: 700;
+  // font-size: 3rem;
 }
 
 .--btn {
   $width: 250px;
   $border: 5px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -133,17 +138,17 @@
 .about__me{
   &.--grid{
     display: grid;
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 4fr 6fr;
   }
 }  
 .profile-container{
 
 } 
 .profile-image{
-  background: url("../media/imacycleopath.jpg" );
   -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
-          clip-path: polygon(25% 10%, 75% 10%, 93% 50%, 75% 90%, 25% 90%, -5% 50%);
-  background-image: cover;
+          clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);;
+  background-size: cover;
+  background-position: center;
 }
 
 /*
@@ -153,23 +158,65 @@
 */
 
 .skills__wrapper{
- width: 80%;
+ width: 85%;
  margin: 0 auto;
 
 
   &.--grid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
   }
 }
-.skillsbox{
 
+.skillsbox{
+  filter: grayscale(100%);
 
   &.--grid{
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: auto auto;
+    border: 1px solid black;
+    background: #fff;
   }
+  transition: visibility 10ms ease-out;
+  &:hover{
+    filter: grayscale(0%);
+    background: $blueblack;
+    & .skillsbox__bar{
+      visibility: visible;
+    }
+    & .color-bar{
+        animation: color 500ms linear 10ms 1 forwards;
+
+    }
+  }
+}
+@-webkit-keyframes color{
+  0% {width: 0%}
+  100%{width: 60%}
+}
+
+.skillsbox__icon{
+  width: 60%;
+  padding: 2rem 0;
+  place-self:center;
+}
+
+.skillsbox__bar{
+   width:100%;
+   visibility: hidden;
+   padding: .5rem .5rem;
+   .bar-shell{
+      height:1.5rem;
+      // margin:5px 0 2px;
+      background: #c7c5c52c;
+      border: 1px solid rgba(204, 204, 204, 0.541);
+   }
+    .color-bar{
+      width: 60%;
+      height: 100%;
+      background: $pink;
+    }
 }
 
 /*
@@ -178,10 +225,97 @@
 ==============================
 */
 .project__wrapper{
+  width: 80%;
+  margin: 0 auto;
 
   &.--grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
+.project__screen{
+  height: 100%;
+  transition: all .4s ease-out; 
+  &:hover{
+    transform: scale(.9);
+  }
+}
+
+/*
+==============================
+------BLOG SECTION------------
+==============================
+*/
+.blog__container{
+  width: 85%;
+  margin: 0 auto;
+
+  &.--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+.blog__block{
+
+  &.--grid{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px;
+  }
+  transition: all .4s ease-out;
+  &:hover{
+    & .blog__img{
+      opacity: 1;
+    }
+  }
+}
+.image__shell{
+  position: relative;
+  height: 100%;
+}
+
+// .date__shell{
+//   position: absolute;
+// }
+.blog__date{
+  position: relative;
+      -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+          clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);;
+  background:#ccc;
+
+}
+.blog__img{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: all .4s ease-out;
+
+  // background-position: center; 
+}
+.date__shell{
+  text-align: center;
+  z-index: -1;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%)
+}
+.blog__title{
+  place-self: center; 
+}
+
+/*
+==============================
+------CONTACT SECTION---------
+==============================
+*/
+.contact{
+  background: $blueblack;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+clip-path: polygon(50% 30%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+
 

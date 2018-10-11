@@ -62,8 +62,18 @@ table {
 .--center{
 	text-align: center;
 }
---makecenter{
+.--makecenter{
 	margin: 0 auto;
+}
+.small-wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: polya;
+    src: url(../fonts/POLYA.otf);
 }
 a{
   text-decoration: none;
@@ -73,5 +83,5 @@ img{
 	height: auto;
 }
 h1{
-  font-size: 3rem;
+	font-size: 5rem;
 }
