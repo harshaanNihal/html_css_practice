@@ -67,7 +67,7 @@ h1 {
 a.gold[data-bubble]:after {
 	background-color:gold;
 }
-.menu a:hover[data-bubble]:after, .menu a:active[data-bubble]:after, .menu a:focus[data-bubble]:after {
+a:hover[data-bubble]:after, a:active[data-bubble]:after, a:focus[data-bubble]:after {
 	-webkit-animation:ease bubbleover .4s;
 	animation:ease bubbleover .4s;
   -webkit-animation-fill-mode: both;
